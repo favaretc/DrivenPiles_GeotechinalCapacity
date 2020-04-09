@@ -16,15 +16,15 @@ Import selected columns from *Effective Stress.xls* into txt files:
 Note: if *Effective Stress.xls* is not available, import soil units at every 0.25 ft of depth in SoilUnits.txt, and total stresses, pore water pressure, and effective stresses at every 0.25 ft of depth in Stresses.txt.
 ### Csv Files to Edit
 Edit the following csv files with location soil properties:
-a. **soil_properties.csv**:
+- **soil_properties.csv**:
 1st Column: Soil Unit; 
 2nd Column: Friction Angle (degrees) for each Soil Unit; 
 3rd Column: Undrained Shear Stregth (psf) for each Soil Unit; if Soil Unit is classified as cohesionless, Undrained Shear         	Strength is '-'.
-b. **bearing_coefficients.csv**:
+- **bearing_coefficients.csv**:
 1st Column: Friction Angle (degrees)
 2nd Column: End Bearing Coefficient (Nq) for all the friction angles in Column 1 [see AASHTO LRFD Fig. 10.7.3.8.6f-8]; 
 3rd Column: Coefficient (alpha_t) for all the friction angles in Column 1 [see AASHTO LRFD Fig. 10.7.3.8.6f-7].
-c. **limiting_unit_tip_resistance.csv**:
+- **limiting_unit_tip_resistance.csv**:
 1st Column: Soil Unit; 
 2nd Column: Limiting Unit Tip Resistance (q_L) for all the soil units [see AASHTO LRFD Fig. 10.7.3.8.6f-9]; if Soil Unit is             classified as cohesive, q_L is '-'.  
 
