@@ -39,20 +39,12 @@ Edit the following csv files with location soil properties:
  - **pile-diameter** is a float representing pile diameter in feet (default : 2 feet)
  - **pile_shape** is a string representing pile shape (default: 'circular'; options: 'circular' or 'square')
  - **design** is a string representing type of AASHTO design (default: 'LRFD'; options: 'LRFD' or 'ASD')
- - **LRFDfriction** is a float representing LRFD Resistance Factor for Side Friction (default: 0.65)
- - **LRFDbearing** is a float representing LRFD Resistance Factor for Compression (default: 0.65)
- - **LRFDuplift** is a float representing LRFD Resistance Factor for Uplift (default: 0.5)
- 
- parser.add_argument('--LRFD_bearing_clay', default = 0.35, type=float, help="LRFD Bearing Resistance Factor for Cohesive Soils.")
-parser.add_argument('--LRFD_bearing_sand', default = 0.45, type=float, help="LRFD Bearing Resistance Factor for Cohesionless Soils.")
-parser.add_argument('--LRFD_uplift_clay', default = 0.35, type=float, help="LRFD Uplift Resistance Factor for Cohesive Soils.")
-parser.add_argument('--LRFD_uplift_sand', default = 0.25, type=float, help="LRFD Uplift Resistance Factor for Cohesionless Soils.")
- 
+ - **LRFD_bearing_clay** is a float representing LRFD Bearing Resistance Factor for Cohesive Soils (default: 0.65)
+ - **LRFD_bearing_sand** is a float representing LRFD Bearing Resistance Factor for Cohesionless Soils (default: 0.65)
+ - **LRFD_uplift_clay** is a float representing LRFD Uplift Resistance Factor for Cohesive Soils (default: 0.5)
+ - **LRFD_uplift_sand** is a float representing LRFD Uplift Resistance Factor for Cohesionless Soils (default: 0.5)
  - **ASDcompression** is a float representing ASD Factor of Safety in Compression (default: 2)
  - **ASDuplift** is a float representing ASD Factor of Safety in Uplift (default: 2)
-
-4. In DrivenPileCapacity.py, specify the following:
-	f. Correction Factor (C_f) for coefficient of lateral earth pressure for cohesionless friction angles [AASHTO LRFD Fig. 10.7.3.8.6f-5]
 	
 ## Output:
 1. All results are calculated/exported for depths ranging from 0 ft to 120 ft, every 0.25 ft
