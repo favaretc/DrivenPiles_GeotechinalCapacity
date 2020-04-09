@@ -5,7 +5,7 @@ ASD and LRFD Design Procedure to derive geotechnical capacity of driven piles in
  - one bullet
 
 ### Command Line Arguments
- - pile-diameter is a float in feet (default : 2 feet)
+ - **pile-diameter** is a float in feet (default : 2 feet)
 
 #### Example of how to run:
 ```
