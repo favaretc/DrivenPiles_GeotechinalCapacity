@@ -9,21 +9,26 @@ This code is applicable to:
 
 ## Input
 All input are imported/calculated for depths ranging from 0 ft to 120 ft, every 0.25 ft.
+
 ### Text Files to Import
 Import selected columns from *Effective Stress.xls* into txt files:
-	1. SoilUnits.txt [column K] 
-	2. Stresses.txt [columns M-N-O]
+1. SoilUnits.txt [column K] 
+2. Stresses.txt [columns M-N-O]
+	
 Note: if *Effective Stress.xls* is not available, import soil units at every 0.25 ft of depth in SoilUnits.txt, and total stresses, pore water pressure, and effective stresses at every 0.25 ft of depth in Stresses.txt.
+
 ### Csv Files to Edit
 Edit the following csv files with location soil properties:
 - **soil_properties.csv**:
     - 1st Column: Soil Unit; 
     - 2nd Column: Friction Angle (degrees) for each Soil Unit; 
     - 3rd Column: Undrained Shear Stregth (psf) for each Soil Unit; if Soil Unit is classified as cohesionless, Undrained Shear         	Strength is '-'.
+    
 - **bearing_coefficients.csv**:
     - 1st Column: Friction Angle (degrees)
     - 2nd Column: End Bearing Coefficient (Nq) for all the friction angles in Column 1 [see AASHTO LRFD Fig. 10.7.3.8.6f-8]; 
     - 3rd Column: Coefficient (alpha_t) for all the friction angles in Column 1 [see AASHTO LRFD Fig. 10.7.3.8.6f-7].
+    
 - **limiting_unit_tip_resistance.csv**:
     - 1st Column: Soil Unit; 
     - 2nd Column: Limiting Unit Tip Resistance (q_L) for all the soil units [see AASHTO LRFD Fig. 10.7.3.8.6f-9]; if Soil Unit is             classified as cohesive, q_L is '-'.  
@@ -50,6 +55,7 @@ Edit the following csv files with location soil properties:
 6. Factored Compressive Resistance [kips]: txt + plot
 7. Factored Uplift Resistance [kips]:  txt + plot
 8. Plots
+
 #### Example of how to run:
 ```
 python whatever.py --pile-diameter 2 --
