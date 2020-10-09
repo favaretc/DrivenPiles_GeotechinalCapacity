@@ -1,4 +1,4 @@
-# DrivenPiles_GeotechinalCapacity
+# DrivenPiles_GeotechnicalCapacity
 ASD and LRFD AASHTO Design Procedures to derive geotechnical capacity of driven piles in compression and uplift.
 
 ## Applicability
